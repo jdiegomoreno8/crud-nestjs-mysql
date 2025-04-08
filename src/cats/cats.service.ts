@@ -30,6 +30,7 @@ export class CatsService {
   }
 
   async remove(id: number) {
-    return await this.catsRepository.softDelete(id);
+    return await this.catsRepository.softDelete(id); //se le pasa el id
+    //return await this.catsRepository.softRemove(id); //se le pasa a la instancia
   }
 }
